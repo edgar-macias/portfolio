@@ -12,7 +12,7 @@ export default function Home() {
   const [play] = useSound(`init-sound-effect.mp3`);
 
   useEffect(()=>{
-    {/*const handlePlaySound = () => {
+    const handlePlaySound = () => {
       play();
     };
 
@@ -25,8 +25,8 @@ export default function Home() {
     // Clean up the event listener
     return () => {
       window.removeEventListener('beforeunload', handlePlaySound);
-    };*/}
-  },[{/*play*/}]);
+    };
+  },[play]);
   return (<>
   <div className="flex items-center justify-center h-screen pt-20 md:pt-0">
    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full pt-10">
